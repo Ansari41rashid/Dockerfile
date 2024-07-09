@@ -12,6 +12,7 @@ RUN tar -xzf apache-tomcat-9.0.87.tar.gz
 COPY Amazon/Amazon-Web/target/Amazon.war /apache-tomcat-9.0.87/webapps/
 WORKDIR /apache-tomcat-9.0.87/bin
 
+#Run tomcat
 CMD ["catalina.sh", "run"]
 
 EXPOSE 8080
